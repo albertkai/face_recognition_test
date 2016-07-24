@@ -1,9 +1,9 @@
 import { Template } from 'meteor/templating';
 import { _ } from 'meteor/underscore'
 import 'tracking/build/tracking-min.js'
-import 'tracking/build/data/eye-min.js'
+//import 'tracking/build/data/eye-min.js'
 import 'tracking/build/data/face-min.js'
-import 'tracking/build/data/mouth-min.js'
+//import 'tracking/build/data/mouth-min.js'
 
 import './main.html';
 
@@ -25,7 +25,7 @@ Template.faces.onRendered(function(){
   $('img').load(function(){
     const selector = '#' + $(this).attr('id');
     const img = $(this).get(0);
-    const tracker = new tracking.ObjectTracker(['face', 'eye', 'mouth']);
+    const tracker = new tracking.ObjectTracker(['face']);
     tracker.on('track', function(event) {
       event.data.forEach(function(rect) {
         window.plot(rect.x, rect.y, rect.width, rect.height, img);
