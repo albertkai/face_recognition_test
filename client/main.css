@@ -1,0 +1,13 @@
+/* CSS declarations go here */
+
+.rect {
+    border: 2px solid #a64ceb;
+    left: -1000px;
+    position: absolute;
+    top: -1000px;
+}
+
+.img-cont{
+    position: relative;
+    float: left;
+}

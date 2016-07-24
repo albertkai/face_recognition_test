@@ -1,0 +1,19 @@
+<head>
+  <title>face_recognition</title>
+</head>
+
+<body>
+  {{> faces}}
+</body>
+
+<template name="faces">
+  <h1>Распознавание лиц на аватарах с Facebook, используя tracker.js</h1>
+  <div>
+    {{#each avatars}}
+      <div class="img-cont">
+        <img id="{{id}}" src="{{url}}" alt=""/>
+      </div>
+    {{/each}}
+  </div>
+</template>
+
