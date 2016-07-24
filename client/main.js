@@ -7,8 +7,8 @@ import 'tracking/build/data/mouth-min.js'
 
 import './main.html';
 
-const limit = 30;
-const startId = 100;
+const limit = 100;
+const startId = 1000;
 
 window.plot = function(x, y, w, h, img) {
   var rect = document.createElement('div');
